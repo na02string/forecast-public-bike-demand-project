@@ -1,5 +1,10 @@
 # forecast_public_bike_demand_project
 따릉이 수요량 예측 프로젝트
+https://data.seoul.go.kr/dataList/OA-15182/F/1/datasetView.do   
+https://www.data.go.kr/data/15089266/fileData.do   
+https://github.com/vuski/SeoulBikeStationLocation/tree/main
+https://data.seoul.go.kr/dataList/OA-13252/F/1/datasetView.do
+https://freemeteo.co.uk/weather/seoul/history/daily-history/?gid=1835848&language=english&country=united-kingdom&date=2022-06-05
 
 # 소개
 
