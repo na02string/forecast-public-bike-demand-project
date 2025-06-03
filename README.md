@@ -67,6 +67,7 @@ https://freemeteo.co.uk/weather/seoul/history/daily-history/?gid=1835848&languag
 
 # 상세 내용
 [블로그](https://itdatascience.tistory.com/61)
+🔗 [강서구 기준 지도 시각화 결과 보기](https://na02string.github.io/forecast-public-bike-demand-project/seoulbike_station_usage.html)
   
 # 아쉬운 점
 - 시간이 부족하여 모든 대여소에 대한 예측을 진행하고 최적 루트를 정립하는 것까지 하지 못한 점이 아쉽다.
