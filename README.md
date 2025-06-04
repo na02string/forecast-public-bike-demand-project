@@ -1,4 +1,4 @@
-# forecast_public_bike_demand_project
+![image](https://github.com/user-attachments/assets/1630bfec-e6fb-497d-bcee-cdfc621c8ad0)# forecast_public_bike_demand_project
 따릉이 수요량 예측 프로젝트
 
 # 소개
@@ -66,6 +66,11 @@
 
 
 
+![image](https://github.com/user-attachments/assets/b765e9db-b1e5-4d21-9dba-d72308b003f6)
+![image](https://github.com/user-attachments/assets/f48dc801-eb1a-4484-99c1-a9a42eb38d92)
+![image](https://github.com/user-attachments/assets/1491d5eb-4c32-4e5c-ac70-41e4145859a3)
+
+![image](https://github.com/user-attachments/assets/cf32e7ef-a1d7-4453-8759-29dcba24e50d)
 
 
 
