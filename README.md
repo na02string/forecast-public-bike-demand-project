@@ -35,6 +35,9 @@
   - 날씨 데이터를 특정 기준에 따라 범주화(discomfort, windforce, 미세먼지, 초미세먼지 등)
   - 결측치 및 이상치 처리
   - datetime 변환 및 시간 관련 특성(hour, month, dayofweek 등) 추출
+ ![image](https://github.com/user-attachments/assets/fe040f5e-3186-4a0c-9473-02e170492dae)
+
+
 
 ### [3. 탐색적 데이터 분석 (EDA)](https://github.com/na02string/forecast-public-bike-demand-project/blob/main/2_preprocessing_and_EDA.ipynb)
 
