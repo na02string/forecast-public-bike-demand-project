@@ -7,12 +7,9 @@ https://data.seoul.go.kr/dataList/OA-13252/F/1/datasetView.do
 https://freemeteo.co.uk/weather/seoul/history/daily-history/?gid=1835848&language=english&country=united-kingdom&date=2022-06-05
 
 # 소개
+서울시 공공자전거 서비스인 따릉이는 시민들의 교통·레저 수단으로 활발히 이용되고 있으며, 수요 예측을 통해 효율적인 자전거 재배치 전략 수립이 절실한 상황입니다.
+본 프로젝트는 '통계적 기계학습' 수업의 프로젝트로 진행되었으며, 2022년 서울시 따릉이 데이터를 기반으로 시간대별·지역별 수요 예측 모델을 개발해 자전거의 부족/과잉 상태를 사전에 예측하고 재배치 전략 수립에 활용될 수 있도록 설계되었습니다.
 
-- ‘통계적 기계학습’ 강의 팀 프로젝트로 진행
-- 데이터 수집 및 전처리, 탐색적 데이터 분석(EDA), 모델링 담당
-- 대여소별 따릉이 (반납 수 - 대여 수) 예측을 통한 분배 문제 해결 목표
-- 계절, 날씨 등의 영향과 시간대별 사용 패턴을 반영한 시계열 모델 활용
-- LSTM 모델을 적용하여 따릉이 분배 최적화에 기여 가능
 
 # 요약
 서울시 공공자전거 대여소 수요량 예측 프로젝트
@@ -29,18 +26,27 @@ https://freemeteo.co.uk/weather/seoul/history/daily-history/?gid=1835848&languag
 ### 2. 데이터 수집 및 전처리
 
 - **데이터 출처**:
-  - 서울 열린데이터 광장의 공공자전거 시간대별 대여건수 및 대여이력정보 (2022년 1월~12월)
-  - 외부 데이터: 날씨 정보(기온, 강수량 등) 및 미세먼지 농도 크롤링하여 저장
-
-- **전처리 과정**:
+  - [서울시 공공자전거 대여이력 정보 (2022년 1월~12월)](https://data.seoul.go.kr/dataList/OA-15182/F/1/datasetView.do)
+  - [서울시 공공자전거 이용정보(시간대별)](https://data.seoul.go.kr/dataList/OA-15245/F/1/datasetView.do)
+  - [서울특별시_시간별 (초)미세먼지](https://www.data.go.kr/data/15089266/fileData.do)
+  - [따릉이 대여소 위치(폐쇄 포함)](https://github.com/vuski/SeoulBikeStationLocation/tree/main)
+  - [서울시 공공자전거 대여소 정보](https://data.seoul.go.kr/dataList/OA-13252/F/1/datasetView.do)
+  - 외부 데이터: [서울시 시간대별 날씨 정보는 외부 크롤링을 통해 추가 수집](https://freemeteo.co.uk/weather/seoul/history/daily-history/?gid=1835848&language=english&country=united-kingdom&date=2022-06-05)
+ 
+    
+- [**전처리 과정**:](https://github.com/na02string/forecast-public-bike-demand-project/blob/main/1_data_preparing.ipynb)
   - 날짜 및 시간 정보를 활용한 시간대별 데이터 정리
   - 날씨 및 미세먼지 데이터를 대여 이력 데이터와 병합
+  - 날씨 데이터를 특정 기준에 따라 범주화(discomfort, windforce, 미세먼지, 초미세먼지 등)
   - 결측치 및 이상치 처리
+  - datetime 변환 및 시간 관련 특성(hour, month, dayofweek 등) 추출
 
-### 3. 탐색적 데이터 분석 (EDA)
+### [3. 탐색적 데이터 분석 (EDA)](https://github.com/na02string/forecast-public-bike-demand-project/blob/main/2_preprocessing_and_EDA.ipynb)
 
 - **이용자 특성 분석**:
   - 성별 및 연령대별 이용 패턴 파악
+  - ![image](https://github.com/user-attachments/assets/692420be-768a-4105-b6df-4f14c9ea0ce5)
+    - 각 type 모두 남성(M)사용자가 가장 많음
   - 이용권 타입(일일권, 정기권, 단체권)별 사용량 분석
 
 - **시간대별 이용 패턴**:
