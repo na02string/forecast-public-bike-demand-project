@@ -35,7 +35,43 @@
   - 날씨 데이터를 특정 기준에 따라 범주화(discomfort, windforce, 미세먼지, 초미세먼지 등)
   - 결측치 및 이상치 처리
   - datetime 변환 및 시간 관련 특성(hour, month, dayofweek 등) 추출
+ 
+  ----
  ![image](https://github.com/user-attachments/assets/fe040f5e-3186-4a0c-9473-02e170492dae)
+![image](https://github.com/user-attachments/assets/2dba805e-947f-4d2e-9b64-c003369230a3)
+![image](https://github.com/user-attachments/assets/6e6531b6-79a6-4553-a220-3b98ae2ea33f)
+![image](https://github.com/user-attachments/assets/8f5eb0ef-b749-41ca-9432-f655d49a8ab4)
+![image](https://github.com/user-attachments/assets/1ceca048-7304-4ab7-82dc-b8d6de7888a0)
+![image](https://github.com/user-attachments/assets/e28ec19e-1b95-4808-835e-6309b10ef943)
+![image](https://github.com/user-attachments/assets/7b017d26-7013-4bb7-b9a4-54a480cd54a3)
+![image](https://github.com/user-attachments/assets/2dfd583f-d96f-464c-bc0c-e16ead81e657)
+
+![image](https://github.com/user-attachments/assets/6977bc9b-0995-48cf-8649-bf2a819001a1)
+![image](https://github.com/user-attachments/assets/ad118377-e28b-4f92-b68a-4292de4b4a92)
+![image](https://github.com/user-attachments/assets/4a22cfd6-e686-477f-b5ad-508f5f3e1bbe)
+
+![image](https://github.com/user-attachments/assets/61c6d7fb-0a7f-48f7-9a70-476b8ab8e039)
+
+![image](https://github.com/user-attachments/assets/15f90ecd-0125-46b3-9901-a252e50aadf9)
+![image](https://github.com/user-attachments/assets/392c8bbc-1513-498b-aeb5-ee3a622ea477)
+![image](https://github.com/user-attachments/assets/1905116d-776b-44a0-8ba5-6069e9a9a5f7)
+
+![image](https://github.com/user-attachments/assets/e48368de-fcdc-46fc-ab7c-c20f530db65b)
+![image](https://github.com/user-attachments/assets/2379fe53-4d65-4016-a3f4-6deac050d65d)
+![image](https://github.com/user-attachments/assets/2839d6b9-7b48-4baf-ac10-6cfc89262ae8)
+
+![image](https://github.com/user-attachments/assets/583113c9-38ae-459f-9f51-4178344af52d)
+![image](https://github.com/user-attachments/assets/bc85bd8f-a633-4ba9-95e4-4e399e19eb7a)
+![image](https://github.com/user-attachments/assets/2e345631-8b95-41c5-880a-bf67628bbc8b)
+
+
+
+
+
+
+
+
+
 
 
 
