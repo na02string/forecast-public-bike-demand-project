@@ -1,5 +1,5 @@
 # forecast_public_bike_demand_project
-따릉이 수요량 예측 프로젝트
+[따릉이 수요량 예측 프로젝트](https://itdatascience.tistory.com/61)
 
 # 소개
 서울시 공공자전거 서비스인 따릉이는 시민들의 교통·레저 수단으로 활발히 이용되고 있으며, 수요 예측을 통해 효율적인 자전거 재배치 전략 수립이 절실한 상황입니다.
