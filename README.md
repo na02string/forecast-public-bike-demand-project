@@ -1,10 +1,5 @@
 # forecast_public_bike_demand_project
 따릉이 수요량 예측 프로젝트
-https://data.seoul.go.kr/dataList/OA-15182/F/1/datasetView.do   
-https://www.data.go.kr/data/15089266/fileData.do   
-https://github.com/vuski/SeoulBikeStationLocation/tree/main
-https://data.seoul.go.kr/dataList/OA-13252/F/1/datasetView.do
-https://freemeteo.co.uk/weather/seoul/history/daily-history/?gid=1835848&language=english&country=united-kingdom&date=2022-06-05
 
 # 소개
 서울시 공공자전거 서비스인 따릉이는 시민들의 교통·레저 수단으로 활발히 이용되고 있으며, 수요 예측을 통해 효율적인 자전거 재배치 전략 수립이 절실한 상황입니다.
