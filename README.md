@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/1630bfec-e6fb-497d-bcee-cdfc621c8ad0)# forecast_public_bike_demand_project
+# forecast_public_bike_demand_project
 따릉이 수요량 예측 프로젝트
 
 # 소개
@@ -9,7 +9,7 @@
 # 요약
 서울시 공공자전거 대여소 수요량 예측 프로젝트
 
-### 1. 프로젝트 개요
+## 1. 프로젝트 개요
 
 - **프로젝트명**: 서울시 공공자전거 대여소 수요량 예측
 - **진행 기간**: 2023.03 ~ 2023.05
@@ -18,7 +18,7 @@
   - 서울시 공공자전거 '따릉이'의 대여소별 수요 예측을 통해 효율적인 자전거 재분배 및 운영 개선
   - 장소별, 시간대별 수요 패턴을 분석하여 자전거 거치율 최적화 및 이용자 만족도 향상
 
-### 2. 데이터 수집 및 전처리
+## 2. 데이터 수집 및 전처리
 
 - **데이터 출처**:
   - [서울시 공공자전거 대여이력 정보 (2022년 1월~12월)](https://data.seoul.go.kr/dataList/OA-15182/F/1/datasetView.do)
@@ -35,72 +35,199 @@
   - 날씨 데이터를 특정 기준에 따라 범주화(discomfort, windforce, 미세먼지, 초미세먼지 등)
   - 결측치 및 이상치 처리
   - datetime 변환 및 시간 관련 특성(hour, month, dayofweek 등) 추출
- 
-  ----
- ![image](https://github.com/user-attachments/assets/fe040f5e-3186-4a0c-9473-02e170492dae)
-![image](https://github.com/user-attachments/assets/2dba805e-947f-4d2e-9b64-c003369230a3)
-![image](https://github.com/user-attachments/assets/6e6531b6-79a6-4553-a220-3b98ae2ea33f)
-![image](https://github.com/user-attachments/assets/8f5eb0ef-b749-41ca-9432-f655d49a8ab4)
-![image](https://github.com/user-attachments/assets/1ceca048-7304-4ab7-82dc-b8d6de7888a0)
-![image](https://github.com/user-attachments/assets/e28ec19e-1b95-4808-835e-6309b10ef943)
-![image](https://github.com/user-attachments/assets/7b017d26-7013-4bb7-b9a4-54a480cd54a3)
-![image](https://github.com/user-attachments/assets/2dfd583f-d96f-464c-bc0c-e16ead81e657)
 
-![image](https://github.com/user-attachments/assets/6977bc9b-0995-48cf-8649-bf2a819001a1)
-![image](https://github.com/user-attachments/assets/ad118377-e28b-4f92-b68a-4292de4b4a92)
-![image](https://github.com/user-attachments/assets/4a22cfd6-e686-477f-b5ad-508f5f3e1bbe)
+## [3. 탐색적 데이터 분석 (EDA)](https://github.com/na02string/forecast-public-bike-demand-project/blob/main/2_preprocessing_and_EDA.ipynb)
 
-![image](https://github.com/user-attachments/assets/61c6d7fb-0a7f-48f7-9a70-476b8ab8e039)
-
-![image](https://github.com/user-attachments/assets/15f90ecd-0125-46b3-9901-a252e50aadf9)
-![image](https://github.com/user-attachments/assets/392c8bbc-1513-498b-aeb5-ee3a622ea477)
-![image](https://github.com/user-attachments/assets/1905116d-776b-44a0-8ba5-6069e9a9a5f7)
-
-![image](https://github.com/user-attachments/assets/e48368de-fcdc-46fc-ab7c-c20f530db65b)
-![image](https://github.com/user-attachments/assets/2379fe53-4d65-4016-a3f4-6deac050d65d)
-![image](https://github.com/user-attachments/assets/2839d6b9-7b48-4baf-ac10-6cfc89262ae8)
-
-![image](https://github.com/user-attachments/assets/583113c9-38ae-459f-9f51-4178344af52d)
-![image](https://github.com/user-attachments/assets/bc85bd8f-a633-4ba9-95e4-4e399e19eb7a)
-![image](https://github.com/user-attachments/assets/2e345631-8b95-41c5-880a-bf67628bbc8b)
-
-
-
-![image](https://github.com/user-attachments/assets/b765e9db-b1e5-4d21-9dba-d72308b003f6)
-![image](https://github.com/user-attachments/assets/f48dc801-eb1a-4484-99c1-a9a42eb38d92)
-![image](https://github.com/user-attachments/assets/1491d5eb-4c32-4e5c-ac70-41e4145859a3)
-
-![image](https://github.com/user-attachments/assets/cf32e7ef-a1d7-4453-8759-29dcba24e50d)
-
-![image](https://github.com/user-attachments/assets/e4dd1e61-470a-45d9-a2b2-326d4061506d)
-![image](https://github.com/user-attachments/assets/093aae6e-fada-4ba6-83c9-b6f23c2914fc)
-![image](https://github.com/user-attachments/assets/bb2dd3ed-339b-4ff0-8a57-fb5faeae6edb)
-
-![image](https://github.com/user-attachments/assets/37809eec-fc4b-4813-a4a7-b8272aa87789)
-![image](https://github.com/user-attachments/assets/488cdbee-7be3-4840-8bc4-edfe93fd2671)
-![image](https://github.com/user-attachments/assets/6c928807-dac0-4f29-b3df-3ee8a6a4e5f9)
-
-
-
-
-
-
-
-### [3. 탐색적 데이터 분석 (EDA)](https://github.com/na02string/forecast-public-bike-demand-project/blob/main/2_preprocessing_and_EDA.ipynb)
-
-- **이용자 특성 분석**:
-  - 성별 및 연령대별 이용 패턴 파악
-  - ![image](https://github.com/user-attachments/assets/692420be-768a-4105-b6df-4f14c9ea0ce5)
-    - 각 type 모두 남성(M)사용자가 가장 많음
+### **이용자 특성 분석**:
   - 이용권 타입(일일권, 정기권, 단체권)별 사용량 분석
+    #### 🧩**시간대별 패턴**
 
-- **시간대별 이용 패턴**:
-  - 계절별, 요일별, 시간대별 대여량 변화 추이 분석
-  - 출퇴근 시간대 및 주말 이용량 패턴 식별
+    | Regular(정기권) | Casual(일일권) | Group(단체권) |
+    |----------------|----------------|----------------|
+    | <img src="https://github.com/user-attachments/assets/fe040f5e-3186-4a0c-9473-02e170492dae" width="260"/> | <img src="https://github.com/user-attachments/assets/cf32e7ef-a1d7-4453-8759-29dcba24e50d" width="260"/> | <img src="https://github.com/user-attachments/assets/6e6531b6-79a6-4553-a220-3b98ae2ea33f" width="260"/> |
+    |두 번의 뚜렷한 피크 <br>- 07~09시: 출근 시간 피크 <br>- 17~19시: 퇴근 시간 피크<br>낮 시간대(10~16시)는 상대적으로 평이함|- 오전 10시 ~ 오후 18시까지 꾸준히 증가  <br>- 18시쯤 최고점 찍고 이후 감소 <br>- 새벽·야간엔 이용 거의 없음| - 오전엔 거의 없음 <br>- 오후 14~18시 사이 집중 <br>- 에러바가 상대적으로 큼 <br>→ 데이터 수가 적고 변동성이 큼|
+    |- 출퇴근 목적의 통근용 정기 사용자 중심 <br>- 따릉이를 실질적인 교통수단으로 활용함|- 관광·산책·가벼운 외출 목적 <br>- 출퇴근과 무관한 여가·일상용 이용자 중심|- 관광/야외활동에 참여한 단체가 주로 오후에 몰림 <br>- ex. 기업 워크숍,대학 동아리,가족 단위 등|
+    |출퇴근 시간 자전거 공급 보장 필요 | 관광지·공원 근처 자전거 확보||
 
-- **환경 요인과의 관계 분석**:
-  - 기온, 강수량, 바람 세기, 불쾌지수 등 날씨 요인과 대여량의 상관관계 분석
-  - 미세먼지 및 초미세먼지 농도에 따른 이용량 변화 분석
+
+    <table>
+        <tr>
+            <td><img src="https://github.com/user-attachments/assets/8f5eb0ef-b749-41ca-9432-f655d49a8ab4" width="400"/></td>
+            <td><img src="https://github.com/user-attachments/assets/1ceca048-7304-4ab7-82dc-b8d6de7888a0" width="400"/></td>
+        </tr>
+        <tr>
+            <td colspan="2">
+            <b>시간에 따라 따릉이 대여량/반납량/반납-대여 차이 평균 변화 (사용자 type 구분 X)</b><br><br>
+            여기서 <b>Rental</b>은 시간대별 평균 대여량, <b>Return</b>은 시간대별 평균 반납량, <b>Return - Rental</b>은 자전거 부족 및 잉여 시간대 확인을 위한 지표입니다.<br><br>
+            오른쪽 막대 그래프에서 볼 수 있듯이 사용자 type 중 <b>regular</b>의 양이 압도적으로 많아서, 사용자 type을 구분하지 않은 왼쪽 그래프의 경우 regular 그래프의 형태와 매우 유사한 양상을 보입니다.
+            </td>
+        </tr>
+    </table>
+
+
+    - 위 내용들을 정리해보면 아래와 같이 해석해볼 수 있습니다.
+
+
+        | 시간대     | 관찰  | 의미   |해석       |
+        |------------|------------|------------|------------|
+        | **0~5시**| 대여, 반납 모두 낮음| 새벽시간. 이용 거의 없음| 운영 종료 시간 또는 재배치 시간대 적합  |
+        | **6~9시**| 대여 급증 (출근), 반납은 상대적으로 낮음 → 반납-대여 음수 | 출근 시간 대여 수요 폭발<br>→ 자전거 부족 발생 | 🔺 공급 필요: 자전거 미리 채워야 함                                   |
+        | **10~16시**    | 대여·반납 균형 (완만)                        | 낮 시간대 비교적 안정적 흐름             | 운영 유지, 재배치 시간대 적합                                        |
+        | **17~19시**    | 대여량 또 한 번 급증 → 반납-대여 최저점     | 퇴근 시간 → 자전거 부족 심화             | 🔺 공급 필요: 자전거 미리 채워야 함.<br>대여 피크가 퇴근 시간대(18시)에 다시 한 번 발생 |
+        | **20~23시**    | 대여량 감소, 반납량도 감소                  | 저녁 이후 여유 시간                       | 재배치 시간대 적합                                                    |
+
+
+    #### 🧩월·요일 패턴
+    - **월별** : 봄·가을(4-6, 9-10월) 최대 / 한겨울·한여름 최소
+
+        <table>
+            <tr>
+                <th>Regular(정기권)</th>
+                <th>Casual(일일권, 일일권(비회원))</th>
+                <th>Group(단체권)</th>
+            </tr>
+            <tr>
+                <td><img src="https://github.com/user-attachments/assets/6977bc9b-0995-48cf-8649-bf2a819001a1" width="300"></td>
+                <td><img src="https://github.com/user-attachments/assets/ad118377-e28b-4f92-b68a-4292de4b4a92" width="300"></td>
+                <td><img src="https://github.com/user-attachments/assets/4a22cfd6-e686-477f-b5ad-508f5f3e1bbe" width="300"></td>
+            </tr>
+            <tr>
+                <td>
+                <ul>
+                    <li>월~금까지 일관되게 높은 대여량</li>
+                    <li>출퇴근 목적의 교통 수단</li>
+                    <li>토·일에는 출근 수요가 없어 이용량이 확연히 감소</li>
+                    <li>⇒ 평일 중심의 생활형/통근형 수요</li>
+                    <li>⇒ 주말엔 정기 사용 거의 없음</li>
+                </ul>
+                </td>
+                <td>
+                <ul>
+                    <li>평일에는 거의 사용하지 않음</li>
+                    <li>주말(5, 6)에 이용량이 급증</li>
+                    <li>→ 레저/여가 목적의 가능성 높음</li>
+                    <li><code>casual</code>은 주말형 사용자</li>
+                    <li>→ 토·일 관광지/공원 인근 자전거 공급 강화 필요</li>
+                </ul>
+                </td>
+                <td>
+                <ul>
+                    <li>주말(토·일)에만 집중적으로 발생</li>
+                    <li>평일엔 거의 없음 → 행사나 체험 활동 등 단체 외출에 한정</li>
+                    <li><code>group</code>은 완전히 주말 전용 수요</li>
+                    <li>→ 단체 예약 대응이나 주말 이벤트 기반 운영 정책 필요</li>
+                </ul>
+                </td>
+            </tr>
+        </table>
+
+
+    #### 🧩기상 변수 영향
+
+    <img src="https://github.com/user-attachments/assets/61c6d7fb-0a7f-48f7-9a70-476b8ab8e039" width="700"/>
+
+    | 변수               | 상관(regular) | 상관(casual) | 상관(group) | 해석 |
+    |--------------------|---------------|---------------|--------------|------|
+    | **기온(temp)**     | +0.42         | +0.47         | +0.35        | 따뜻할수록 수요↑ |
+    | **습도(humid)**    | -0.25         | -0.32         | -0.28        | 습도가 높을수록 수요↓ |
+    | **풍속(windspeed)**| +0.15         | +0.20         | +0.19        | 미약한 양(+) 관계 |
+    | **PM2.5**          | -0.045        | -0.033        | -0.037       | 모든 이용자와 약한 음의 상관관계<br>실제로 확인해보면 미세먼지 나쁨 이상일 때 뚜렷한 수요 감소 관찰됨 |
+    | **PM10**           | -0.031        | -0.037        | -0.047       | 모든 이용자와 약한 음의 상관관계<br>실제로 확인해보면 미세먼지 나쁨 이상일 때 뚜렷한 수요 감소 관찰됨 |
+
+    - **windforce**
+        - 바람세기 (0: 바람이 영향을 줄만큼 세지 않음, 1: 영향을 줄만큼 셈)
+        <table>
+            <tr>
+                <th>Regular(정기권)</th>
+                <th>Casual(일일권, 일일권(비회원))</th>
+                <th>Group(단체권)</th>
+            </tr>
+            <tr>
+                <td><img src="https://github.com/user-attachments/assets/15f90ecd-0125-46b3-9901-a252e50aadf9" width="260"></td>
+                <td><img src="https://github.com/user-attachments/assets/392c8bbc-1513-498b-aeb5-ee3a622ea477" width="260"></td>
+                <td><img src="https://github.com/user-attachments/assets/1905116d-776b-44a0-8ba5-6069e9a9a5f7" width="260"></td>
+            </tr>
+            <tr>
+                <td>
+                바람이 불든 말든 거의 차이 없음<br>
+                <b>windforce=1</b>일 때 소폭 증가했지만 신뢰구간이 겹치므로 유의미한 차이는 아님
+                </td>
+                <td>
+                <b>windforce=1</b>일 때 이용량 증가<br>
+                에러바(신뢰구간)가 넓어 통계적으로 완전히 확신하긴 어려우나, 경향은 있음
+                </td>
+                <td>
+                <b>windforce=1</b>일 때 이용량이 훨씬 많아짐<br>
+                • 신뢰구간이 아주 크므로 표본 수가 적고 변동성이 큼
+                </td>
+            </tr>
+            <tr>
+                <td>
+                <ul>
+                    <li>정기 이용자는 날씨에 크게 구애받지 않음 → 출퇴근 등의 실수요자이기 때문</li>
+                    <li>⇒ 운용 측면에서는 예측 가능한 수요군</li>
+                </ul>
+                </td>
+                <td>
+                <ul>
+                    <li>의외로 바람이 불어도 casual 사용자는 많이 탐</li>
+                    <li>⇒ 바람 영향이 아주 크지 않음 (시원한 날씨라면 오히려 여가 활동에 긍정적일 수도 있음)</li>
+                </ul>
+                </td>
+                <td>
+                <ul>
+                    <li>단체 활동은 바람이 불어도 진행되는 경우가 많음</li>
+                    <li>⇒ 오히려 날짜 고정성이 더 큰 변수 (워크숍, 캠프 등)</li>
+                </ul>
+                </td>
+            </tr>
+        </table>
+
+    - **미세먼지 (PM10) & 초미세먼지(PM2.5)**
+        - [아래 표](https://blog.naver.com/kopajago/223047035108)를 기준으로 미세먼지를 좋음(good), 보통(average), 나쁨(bad), 매우나쁨(very bad)으로 구분했습니다.
+
+        | 구분 | 미세먼지 | 초미세먼지 | 설명 |
+        |------|----------|------------|------|
+        | 좋음 | 0-30    | 0-15       | 공기 상태가 굉장히 양호합니다 |
+        | 보통 | 31-80   | 16-35      | 공기 상태가 양호한 편입니다 |
+        | 나쁨 | 81-150  | 36-75      | 외출 시 마스크 착용하는 것이 좋습니다. <br>먼거리의 경우 먼지로 인해 잘 보이지 않을 수 있습니다|
+        | 매우나쁨 | 151이상 | 76이상 |외출을 하지 않는 편이 좋으며, 시야 확보가 어려워지게 됩니다 |
+
+        - **미세먼지 (PM10)**
+
+            | 정기권(Regular) | 일일권(Casual) | 단체권(Group) |
+            |----------------|----------------|----------------|
+            |![image](https://github.com/user-attachments/assets/e48368de-fcdc-46fc-ab7c-c20f530db65b)|![image](https://github.com/user-attachments/assets/2379fe53-4d65-4016-a3f4-6deac050d65d)|![image](https://github.com/user-attachments/assets/2839d6b9-7b48-4baf-ac10-6cfc89262ae8)|
+            | • good ~ average까지는 큰 변화 없음 <br>• bad일 때 이용량 급감 <br>• very bad일 때 일부 회복 보이지만 신뢰구간 매우 큼 (불확실성 큼)| • good, average에서 거의 동일 <br>→ 미세먼지 좋을수록 잘  탐 <br>• bad에서 급격한 감소, very bad는 더 줄어듦 <br>• 에러바 크지만 뚜렷한 하락 추세| • good, average: 이용량 유지 <br>• bad, very bad: 뚜렷한 하락 |
+            |⇒  정기 사용자도 미세먼지가 매우 나쁠 땐 일부 이용 자제<br>다만 출퇴근 수요로 인해 완전히 포기되진 않음<br>→ 약간의 영향은 있으나 의무적인 이용 성격이 유지됨 |⇒  casual 사용자는 미세먼지에 민감하게 반응함<br>→ 건강이나 체험 목적이라 미세먼지에 민감하게 사용 여부 결정<br>공공 자전거 수요 예측에 미세먼지 반영 필요|⇒  단체 활동도 미세먼지에 예민하게 반응 <br>→ 미세먼지가 일정 기준 이상이면 행사 자체가 취소되는 경우로 추정 가능<br>→ 특히 학생/가족 단체 중심이라면 영향 더 큼|
+        
+        - **초미세먼지 (PM2.5)**
+
+            | 정기권(Regular) | 일일권(Casual) | 단체권(Group) |
+            |----------------|----------------|----------------|
+            |![image](https://github.com/user-attachments/assets/583113c9-38ae-459f-9f51-4178344af52d)|![image](https://github.com/user-attachments/assets/bc85bd8f-a633-4ba9-95e4-4e399e19eb7a)|![image](https://github.com/user-attachments/assets/2e345631-8b95-41c5-880a-bf67628bbc8b)|
+            |• good ~ average: 큰 차이 없이 유지 <br>• bad부터 뚜렷하게 감소, very bad에서 급감 <br>• 이용량이 절반 이하로 떨어짐 | • good~average: 높게 유지 <br>• bad부터 급격히 감소 → very bad에서 최저치|•average까지는 유지 <br>•bad, very bad에서 뚜렷한 감소 <br>•very bad는 급감, 변동성 있음 (단체 수 적음)|
+            |⇒  초미세먼지(PM2.5)는 regular 사용자에게도 강한 영향 <br>→ 출퇴근이라도 건강 위해 포기하는 경우 증가<br>→ PM10보다 더 민감하게 반응|⇒  casual 사용자는 초미세먼지에 직접적으로 반응 <br>→ 외출 자체를 자제하거나, 마스크 착용이 부담되어 이용 회피 | ⇒  단체 행사도 초미세먼지에는 예민하게 반응 <br>→ 미세먼지가 나쁠 경우, 행사 취소/연기 가능성|
+
+    #### 🧩 성별 및 연령대별 이용 패턴 파악
+
+    - **성별**
+
+        | 정기권(Regular) | 일일권(Casual) | 단체권(Group) |
+        |----------------|----------------|----------------|
+        |![image](https://github.com/user-attachments/assets/37809eec-fc4b-4813-a4a7-b8272aa87789)|![image](https://github.com/user-attachments/assets/488cdbee-7be3-4840-8bc4-edfe93fd2671)|![image](https://github.com/user-attachments/assets/6c928807-dac0-4f29-b3df-3ee8a6a4e5f9)|
+        |• 남성(M) 사용자가 가장 많음<br>• 여성(F)은 남성보다 수요가 낮고, 성별 미상(U)도 꽤 많은 수를 차지<br>⇒  정기권은 출퇴근 수요 중심이므로 남성이 더 많이 정기적으로 이용하는 경향이 있음 |• 남성(M)과 성별 미상(U) 사용량이 거의 비슷하게 가장 많음<br>•여성(F) 사용자는 상대적으로 적음 <br>⇒  일일권은 관광/레저 목적 수요가 많으며, 가입 절차 없이 사용할 수 있어 성별 정보가 없는 사용자(U)도 많음 | 전반적으로 사용량이 적음 (수만 단위)<br>•남성(M) > 여성(F) > 성별 미상(U) 순<br>⇒   단체권은 사용량 자체가 적고, 행사/체험 등 특정 목적에 따라 성비가 달라질 수 있음|
+
+        - 전체적으로 남성 사용자(M)가 가장 많은 비율을 차지하고 있음
+        - 정기권에서는 남성 중심, 일일권에서는 남성과 성별 미상이 비슷하게 많음
+
+    - **연령대**
+
+        | 정기권(Regular) | 일일권(Casual) | 단체권(Group) |
+        |---|---|---|
+        |<img src="https://github.com/user-attachments/assets/e4dd1e61-470a-45d9-a2b2-326d4061506d" width="260"/>|<img src="https://github.com/user-attachments/assets/093aae6e-fada-4ba6-83c9-b6f23c2914fc" width="260"/>|<img src="https://github.com/user-attachments/assets/bb2dd3ed-339b-4ff0-8a57-fb5faeae6edb" width="260"/>|
+        |• 20대가 압도적으로 많고, 그다음은 30대, 40대 순<br>• 50대 이상은 점점 줄어드는 추세 <br>• 10대와 unknown(미확인)도 일정 수치 존재|• 20대가 가장 많고, 뒤이어 30대, 10대 순<br>• 40~60대 이상은 크게 줄어듦|• 가장 높은 연령대: 40대<br> • 다음으로 많은 연령대: 20대 > 10대 > 30대 순 <br> •50대도 적지 않음, 60~70대는 매우 적음|
+        |⇒  정기권은 출퇴근 등 실생활 교통수단 용도가 많기 때문에, 대학생 및 사회 초년생인 20~30대의 비율이 매우 높음|일일권은 관광·레저 용도가 많아, 젊은 층이 여가 활동으로 사용하는 패턴이 뚜렷함 <br>⇒  10대도 꽤 많은데, 학교 단체 체험 또는 부모 동반 이용 가능성|의외로 중장년층(40대) 단체 이용이 가장 많음 <br>⇒  회사 단체 워크숍, 사내 체육행사, 부모 중심의 가족 단위 활동 등의 영향일 수 있음 <br>10~30대도 여전히 많음.<br>⇒  대학생·청년 동아리, 고등학교 체험학습 등도 주요 수요층 <br>30대보다는 10대의 비율이 더 많음|
 
 ### 4. 모델 개발 및 평가
 
